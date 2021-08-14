@@ -417,6 +417,7 @@ anchor MarshSpawn.PoolsPath at -1070, -4275:  # Above the turrets at the left of
       DoubleJump, Bash, Sword OR Hammer OR Damage=10
     unsafe:
       Bash, Dash OR Sword OR Hammer OR DoubleJump  # While waiting for 3rd shot do two neutral slashes to stay in the air longer / Sometimes the cycle are off making it too hard for gorlek
+      Bash, Damage=20
       DoubleJump, Deflector
 
   conn PoolsApproach.LeftOfWheel:
@@ -529,6 +530,7 @@ anchor HowlsDen.Entrance at -376, -4413:  # Next to Mokk the Brave, but outside 
       Bash, Grenade=1, DoubleJump OR Dash OR Glide   # Bash up off the enemy and Dash/Djump/Glide to the fang. Grenade+bash up from the fang
       Bash, Grenade=1, Sword OR Hammer               # As above, but sword/hammer upslash to cross the last gap
       Grenade=2, DoubleJump            # Grenade jump to get to the vine, then jump right. Dboost the last gap. Grenade jump to EC.
+      Dash, Regenerate, Sword OR Hammer  # Wavedash off the Health Plant, jump immediately off the first log and Dash + Upswing last gap
   pickup MarshSpawn.RecklessShard:
     moki, MarshSpawn.HowlBurnt, BreakWall=10:
       DoubleJump OR Launch
