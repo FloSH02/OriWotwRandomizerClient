@@ -1325,6 +1325,11 @@ anchor WestHollow.Entrance at -303, -4238:  # At Twillen
       HammerSJump=1, Bow=1 OR DoubleJump OR Dash OR Glide
     unsafe:
       HammerSJump=1
+      DoubleJump  # PauseFloat
+      DoubleJump, Damage=10 OR Glide OR Hammer
+      Sword
+      Bash  # PauseFloat
+      Hammer  # PauseFloat
   state WestHollow.PurpleDoorOpen:
     moki, WestHollow.UpperDrainLeverPulled:
       Bow=1, DoubleJump, Dash
